@@ -5,6 +5,7 @@ Building a model to predict whether a paper cites another paper.
 
 * [Introduction](#Introduction)
 * [Data](#Data)
+* [Code](#Code)
 * [Methods](#Methods)
 * [Support](#Support)
 
@@ -14,7 +15,15 @@ Link prediction is the problem of predicting the existence of a link between two
 
 ## Data
 
-You can download the data [here](https://drive.google.com/drive/folders/1YtvcvyWoQASn0OhQOBVEK10NnZq08Ndz?usp=sharing). It contains information about the edges of the network, as well as the abstracts and authors of the papers. You can also download the embeddings we generated [here](https://drive.google.com/drive/folders/1BdKare4opRmOQiSQyjUEtCYylqPt4GqA?usp=sharing). They must be respectively placed in the folders `data/` and `embeddings/`. 
+You can download the data [here](https://drive.google.com/drive/folders/1YtvcvyWoQASn0OhQOBVEK10NnZq08Ndz?usp=sharing). It contains information about the edges of the network, as well as the abstracts and authors of the papers. You can also download the embeddings we generated [here](https://drive.google.com/drive/folders/1BdKare4opRmOQiSQyjUEtCYylqPt4GqA?usp=sharing). They must be respectively placed in the folders `data/` and `embeddings/`.
+
+## Code
+
+All jupyter notebooks can be run in Google Colab without any changes after placing the data (and embeddings) at the appropriate paths.
+
+- Node2Vec_embeddings.ipynb: used to generate and save the Node2Vec embeddings.
+- SciBERT_Embeddings.ipynb: used to generate and save the SciBERT embeddings.
+- Final submission.ipynb: used to create the final feature set, train the models, and provide the final submission file.
 
 ## Methods
 
